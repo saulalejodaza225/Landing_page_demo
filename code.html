@@ -1,0 +1,854 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#5c403c", "primary": "#b70011", "on-secondary-container": "#606369", "on-tertiary-fixed": "#0d1c2e", "surface-container-high": "#e2e7ff", "on-primary-fixed": "#410002", "surface-tint": "#bf0715", "outline-variant": "#e6bdb8", "surface-variant": "#dae2fd", "on-error-container": "#93000a", "on-primary-fixed-variant": "#93000b", "tertiary": "#4c5b6f", "error": "#ba1a1a", "on-secondary-fixed-variant": "#44474d", "tertiary-fixed": "#d5e3fc", "inverse-primary": "#ffb4ab", "surface": "#faf8ff", "secondary": "#5c5e64", "surface-container": "#eaedff", "secondary-fixed-dim": "#c4c6cd", "inverse-surface": "#283044", "secondary-container": "#dedfe7", "surface-container-low": "#f2f3ff", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-on-surface": "#eef0ff", "on-tertiary": "#ffffff", "primary-fixed": "#ffdad6", "on-surface": "#131b2e", "error-container": "#ffdad6", "secondary-fixed": "#e1e2e9", "tertiary-container": "#657388", "surface-bright": "#faf8ff", "tertiary-fixed-dim": "#b9c7df", "surface-dim": "#d2d9f4", "surface-container-lowest": "#ffffff", "on-background": "#131b2e", "background": "#faf8ff", "primary-container": "#dc2626", "on-secondary-fixed": "#191c21", "on-primary-container": "#fff6f5", "primary-fixed-dim": "#ffb4ab", "on-tertiary-fixed-variant": "#3a485b", "outline": "#916f6b", "on-tertiary-container": "#f7f8ff", "on-secondary": "#ffffff", "surface-container-highest": "#dae2fd" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-2xs": "0.25rem", "space-sm": "0.75rem", "space-2xl": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "container-max": "1280px", "space-4xl": "6rem", "space-xs": "0.5rem", "space-xl": "2rem", "space-md": "1rem", "margin-mobile": "1.25rem", "space-3xl": "4.5rem" }, "fontFamily": { "headline-sm": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "code-spec": [ "Space Grotesk" ], "display-mobile": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "display": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-xl": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Space Grotesk" ] }, "fontSize": { "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "code-spec": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display-mobile": [ "38px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "display": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-xl": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-inverse-surface/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.25)]"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md py-space-sm"><div class="flex items-center gap-space-sm"><div class="shrink-0 flex items-center justify-center"><svg class="w-12 h-12 shrink-0 drop-shadow-md transition-transform duration-300 hover:scale-105" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mecánica Prime Logo Vector"><rect width="64" height="64" rx="14" fill="#131B2E" stroke="#b70011" stroke-width="2.5"></rect><circle cx="32" cy="32" r="20" stroke="#dae2fd" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.4"></circle><path d="M22 46V18L32 30L42 18V46" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M32 30V46" stroke="#dc2626" stroke-width="4.5" stroke-linecap="round"></path><circle cx="32" cy="18" r="3.5" fill="#dc2626"></circle><circle cx="22" cy="18" r="2" fill="#ffdad6"></circle><circle cx="42" cy="18" r="2" fill="#ffdad6"></circle></svg></div><div class="flex flex-col"><span class="font-headline-sm uppercase tracking-tight text-inverse-on-surface leading-none text-headline-md">MECÁNICA PRIME</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim mt-space-2xs">Ingeniería Automotriz · Bogotá</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary-fixed-dim font-bold"><a aria-current="page" class="tracking-wider uppercase transition-colors text-primary-fixed-dim font-bold" data-path="inicio" href="#inicio">Inicio</a><a class="font-headline-sm text-code-spec tracking-wider uppercase text-inverse-on-surface hover:text-primary-fixed-dim transition-colors" data-path="servicios" href="#servicios">Servicios</a><a class="font-headline-sm text-code-spec tracking-wider uppercase text-inverse-on-surface hover:text-primary-fixed-dim transition-colors" data-path="proceso" href="#proceso">Proceso</a><a class="font-headline-sm text-code-spec tracking-wider uppercase text-inverse-on-surface hover:text-primary-fixed-dim transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="font-headline-sm text-code-spec tracking-wider uppercase text-inverse-on-surface hover:text-primary-fixed-dim transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-md py-space-xs rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-transform hover:-translate-y-0.5 shadow-md shadow-primary-container/20" href="tel:+573202784199">Agendar revisión</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- ================================================================= -->
+<!-- 1. HERO CINEMATOGRÁFICO                                          -->
+<!-- ================================================================= -->
+<section class="relative w-full -mt-20 pt-32 pb-24 lg:pt-40 lg:pb-36 overflow-hidden bg-inverse-surface text-inverse-on-surface" id="inicio">
+<!-- Cinematic Background Image with Gradient Scrim -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="Cinematic high-end automotive workshop in Bogota with a sleek grey SUV lifted on a blue hydraulic hoist, master mechanic in dark grey overalls inspecting the disc brake assembly with an inspection lamp, immaculate epoxy floor reflecting soft studio lights and professional tool chests in the background" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBm0d9VNrWdD9gcyRahNMbtioz7tqL_oJVt3RidQQrUZLZJwRk52fvmUaZMI8Kt_bqtWVuDHYxX4nJBiKaPO5S9xR5JYp6oUtJRq5IO49cHAzACchYO4AXyvwpz451vuBQZF6vHikiyu7_XzUPcqyazMSQiUSBR09mulT482HCPktoFY2wrHqflwpPStG4rAAoyb5barQTssOcG_GIXpaMKLhhfQ5pT3IGK1TPKiwSQ4bALLSidWikQxA&quot;);">
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-inverse-surface/40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-inverse-surface/60"></div>
+</div>
+<!-- Architectural Grid Lines Overlay (Decorative) -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-10">
+<div class="max-w-[1280px] h-full mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-4 lg:grid-cols-12 gap-gutter">
+<div class="h-full bg-white/5 col-span-1"></div>
+<div class="h-full bg-white/5 col-span-1"></div>
+<div class="h-full bg-white/5 col-span-1"></div>
+<div class="h-full bg-white/5 col-span-1"></div>
+<div class="hidden lg:block h-full bg-white/5 col-span-8"></div>
+</div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-3xl flex flex-col items-start gap-space-lg">
+<!-- Live Workshop Pill -->
+<div class="inline-flex items-center gap-space-xs bg-surface-container-lowest/10 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface">MECÁNICA PRIME · BOGOTÁ D.C.</span>
+<span class="mx-space-2xs text-secondary-fixed-dim">|</span>
+<span class="font-code-spec text-code-spec text-primary-fixed-dim">INGENIERÍA AUTOMOTRIZ</span>
+</div>
+<!-- H1 Main Impact -->
+<h1 class="font-headline-xl text-headline-xl lg:text-display tracking-tight text-white leading-[1.05]">
+          Tu vehículo en <br class="hidden sm:inline">
+<span class="text-primary-fixed-dim relative inline-block">
+            buenas manos.
+            <span class="absolute left-0 -bottom-1 w-full h-1 bg-primary-container/80 rounded-full"></span>
+</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-xl text-body-xl text-surface-container-high/90 max-w-2xl leading-relaxed">
+          Mantenimiento preventivo, diagnóstico computarizado y reparación mecánica especializada con atención técnica certificada, telemetría precisa y procesos 100% transparentes.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-xl py-space-md rounded-lg font-headline-sm text-headline-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-primary-container/30 hover:-translate-y-0.5" href="#contacto">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="">Agendar revisión</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-inverse-on-surface px-space-lg py-space-md rounded-lg font-headline-sm text-headline-sm uppercase tracking-wider backdrop-blur-md transition-all duration-300" href="https://wa.me/573202784199?text=Hola%20Mec%C3%A1nica%20Prime,%20deseo%20consultar%20por%20un%20servicio" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">chat</span>
+<span class="">Hablar por WhatsApp</span>
+</a>
+</div>
+<!-- Metadata Tagline -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-md text-secondary-fixed-dim font-code-spec text-code-spec tracking-wider uppercase">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">verified</span> Mecánica de Precisión</span>
+<span class="text-surface-container-lowest/30">•</span>
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">speed</span> Diagnóstico Digital</span>
+<span class="text-surface-container-lowest/30">•</span>
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">build</span> Mantenimiento Integral</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 2. BARRA DE CONFIANZA (Indicadores clave)                         -->
+<!-- ================================================================= -->
+<section class="w-full bg-inverse-surface py-space-xl shadow-md relative z-20">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-lg lg:gap-space-2xl">
+<!-- Metric 1 -->
+<div class="flex flex-col bg-surface-container-lowest/5 p-space-md rounded-lg">
+<span class="font-display-mobile text-display-mobile text-white tracking-tight leading-none font-bold flex items-baseline">
+            +1.800
+            <span class="text-primary-container text-headline-lg ml-1 font-mono">+</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface mt-space-2xs">Vehículos atendidos</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Mantenimiento y sincronización</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col bg-surface-container-lowest/5 p-space-md rounded-lg">
+<div class="flex items-center gap-space-2xs">
+<span class="font-display-mobile text-display-mobile text-white tracking-tight leading-none font-bold">4.9</span>
+<div class="flex text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star_half</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface mt-space-2xs">Calificación Google</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Basado en reseñas auditadas</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col bg-surface-container-lowest/5 p-space-md rounded-lg">
+<span class="font-display-mobile text-display-mobile text-white tracking-tight leading-none font-bold flex items-baseline">
+            12
+            <span class="text-secondary-fixed-dim text-headline-md ml-1 font-mono">Años</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface mt-space-2xs">Experiencia técnica</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Ingenieros certificados ASE</span>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col bg-surface-container-lowest/5 p-space-md rounded-lg">
+<div class="flex items-center gap-space-2xs">
+<span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-white tracking-tight">Bogotá D.C.</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface mt-space-2xs">Bahías activas</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Barrios Unidos / Cra 27</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center text-secondary-fixed-dim font-label-sm text-label-sm uppercase tracking-widest opacity-75">
+<span class="">ESTÁNDARES DE CALIDAD DIN EN ISO 9001:2015</span>
+<span class="hidden sm:inline">MÉTRICAS DE DEMOSTRACIÓN COMERCIAL AUDITADAS</span>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 3. SERVICIOS PRINCIPALES                                          -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface" id="servicios">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">
+<span class="w-4 h-0.5 bg-primary"></span>
+            ESPECIALIDADES DE TALLER PRIME
+          </div>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+            Todo lo que tu vehículo necesita.
+          </h2>
+<p class="font-body-lg text-body-lg text-secondary">
+            Servicios esenciales para mantener tu vehículo seguro, confiable y listo para la carretera con piezas de especificación OEM.
+          </p>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary font-headline-sm text-code-spec uppercase tracking-wider hover:translate-x-1 transition-transform" href="#contacto">
+<span class="">Ver protocolo completo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Grid of 6 Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Servicio 01: Mantenimiento Preventivo (With Image) -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img alt="Mantenimiento preventivo automotriz y lubricación técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQxL0Qt_ptG9vP4vtIdjDj19noMs3eDbqt6WRRfJRqRn_Y75zHdyo8F4bovhqgnm3QXOWXzS_E8CAhgK7C1GTlno_Oug5gJSdsD7AiW2wrQCkM4zcgFhbZySRfco9yaSgJPLKjJO6xj5WN5Nza6J4W8ZmW9vQWjgFsjUnInRev8d271HgKQP-cVfiKMYpP4FcN-OIgONAqH1_msGEGKb4BhKeESkg_w7humvhdrbJyrxf1vYRjRC3PIQ">
+<div class="absolute top-space-xs left-space-xs bg-inverse-surface/90 text-inverse-on-surface font-code-spec text-code-spec px-space-xs py-space-2xs rounded">
+              MOD-01 // FLUIDOS &amp; FILTROS
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">oil_barrel</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Rendimiento Óptimo</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Mantenimiento preventivo</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Cambio de aceite sintético con certificación API, reemplazo de filtros de cabina, aire y combustible, revisión de 32 puntos de seguridad y calibración de niveles.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="#contacto">
+<span class="">Solicitar revisión</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Servicio 02: Diagnóstico Computarizado (With Image) -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img alt="Diagnóstico computarizado con escáner OBD-II en Mecánica Prime" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD903bR_66AXECeFPEaXmhS_fXGcdj6wR3G2SIXvzvX7eRvgHR8uHY0J0YvHpuNrWZhdVeZcekK59HIh-4NAm9OjEtxHug0X0pTUkzTSxNxCAVszGYNiWIH2ul1Rcr30D4o9XjfNy78jeY8EyIzf6V1zI8BlrR-t3tUETrPBgOVKtAN7C9pEBtYd8WLeq66jDqitTqRNJERACfVh-RcvKbCPmc1ZYINUSRb4MKRkbrTMEU2luv1I0n4eQ">
+<div class="absolute top-space-xs left-space-xs bg-inverse-surface/90 text-inverse-on-surface font-code-spec text-code-spec px-space-xs py-space-2xs rounded">
+              MOD-02 // TELEMETRÍA OBD-II
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">memory</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Escaneo Electrónico</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Diagnóstico computarizado</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Identificación de fallas mediante escáneres multimarca originales (Autel MaxiSys &amp; Launch), mapeo de códigos DTC, lectura de sensores en vivo y telemetría de ECUs.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="#contacto">
+<span class="">Consultar diagnóstico</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Servicio 03: Sistema de Frenos -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">disc_full</span>
+</div>
+<span class="font-code-spec text-code-spec text-secondary-fixed-dim">MOD-03</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Seguridad Activa
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sistema de frenos</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Inspección con micrómetro digital de pastillas, discos de freno ventilados y tambores. Purgado con líquido DOT 4/5.1 y comprobación hidráulica del módulo ABS.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="#contacto">
+<span class="">Agendar revisión</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Servicio 04: Suspensión y Dirección -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">tune</span>
+</div>
+<span class="font-code-spec text-code-spec text-secondary-fixed-dim">MOD-04</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Confort &amp; Control
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Suspensión y dirección</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Revisión técnica de amortiguadores telescópicos, bujes de poliuretano/caucho, terminales axiales, alineación láser computarizada y balanceo estático/dinámico.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="#contacto">
+<span class="">Solicitar diagnóstico</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Servicio 05: Sistema de Refrigeración -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">mode_fan</span>
+</div>
+<span class="font-code-spec text-code-spec text-secondary-fixed-dim">MOD-05</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Protección Térmica
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sistema de refrigeración</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Prueba de estanqueidad por presión para detectar microfugas en radiador, evaluación termostática, inspección de electroventiladores y cambio de anticongelante orgánico OAT.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="#contacto">
+<span class="">Agendar revisión</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Servicio 06: Servicio de Motor -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<span class="font-code-spec text-code-spec text-secondary-fixed-dim">MOD-06</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Ingeniería Mecánica
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Servicio de motor</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Sincronización electrónica de inyección, limpieza por ultrasonido de inyectores, sustitución de kit de repartición/correa y evaluación de compresión por cilindro.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex items-center justify-between bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-colors" href="https://wa.me/573202784199?text=Hola%20Mec%C3%A1nica%20Prime,%20quisiera%20hablar%20con%20un%20asesor%20sobre%20mi%20motor" rel="noopener noreferrer" target="_blank">
+<span class="">Hablar con un asesor</span>
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 4. BANNER DE CONVERSIÓN INTERMEDIO                                -->
+<!-- ================================================================= -->
+<section class="w-full relative py-space-3xl bg-inverse-surface overflow-hidden">
+<div class="absolute inset-0 z-0 bg-cover bg-center opacity-25" data-alt="Mechanical workshop view with illuminated tools and car underside on lift, moody high-contrast lighting with warm garage tones" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCktMfBKQkTEG5_elx21aCiTzxJoWMfou3qkEIsrCbXtgb2t7JTEGgjn3JN6zW6Xued2WsGygbbqj466q4u7pVIkB1_2YSU4KOaneQF54SmNp3WdI33x2HE3x30ChcGINd9xH3gYN4GYtrbQcq4tYZqQReioMnWdVTfdyZcWjGZ1NFFCHXaFYg4d-VV3w4o9kZt9X-jHq1wH1B-Ki5hh9kUxSlCDY783W37ZEAmoIV-3DKWvMKJOaXwJw&quot;);">
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/95 to-inverse-surface/70"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-xl p-space-xl lg:p-space-2xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs text-primary-fixed-dim font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            ATENCIÓN PRIORITARIA EN BOGOTÁ
+          </div>
+<h2 class="font-headline-lg text-headline-lg lg:text-headline-xl text-white tracking-tight">
+            ¿Tu vehículo está presentando una falla?
+          </h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim leading-relaxed">
+            Cuéntanos qué ruidos, testigos de tablero o pérdidas de potencia notas. Nuestro equipo de ingenieros te orientará con criterio técnico sobre el procedimiento recomendado, sin ningún compromiso.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-xl py-space-md rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-all shadow-lg shadow-primary-container/20" href="https://wa.me/573202784199?text=Hola%20Mec%C3%A1nica%20Prime,%20mi%20carro%20presenta%20una%20falla" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Hablar por WhatsApp (+57 320 278 4199)</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 5. POR QUÉ MECÁNICA PRIME (Beneficios)                           -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface-container-low" id="nosotros">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-2xl flex flex-col gap-space-xs mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">FILOSOFÍA DE PRECISIÓN</span>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+          No solo reparamos vehículos. Los cuidamos.
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          Eliminamos la incertidumbre del taller tradicional con procesos estandarizados de laboratorio y comunicación directa con el ingeniero a cargo.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">find_in_page</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Diagnóstico claro</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Explicamos el problema de raíz con fotos, mediciones y alternativas antes de tocar cualquier tornillo o realizar cualquier gasto.
+            </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">supervised_user_circle</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Atención personalizada</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Cada vehículo recibe una hoja de vida técnica y un diagnóstico enfocado en su kilometraje, historial y hábitos de uso en Bogotá.
+            </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">hardware</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Herramientas especializadas</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Torquímetros calibrados, osciloscopios de 4 canales y estaciones de servicio de fluidos de última generación sin improvisaciones.
+            </p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">receipt_long</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Procesos transparentes</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Entregamos los repuestos reemplazados para tu inspección y enviamos reportes de avance por WhatsApp con fotos y videos.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 6. PROCESO EN 4 PASOS (Secuencia horizontal)                      -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface" id="proceso">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-xs mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">PROTOCOLO DE TALLER</span>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+          Así cuidamos tu vehículo.
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          Un flujo de trabajo ordenado y metódico que garantiza que cada procedimiento cuente con tu autorización previa.
+        </p>
+</div>
+<!-- 4 Connected Steps -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-mobile text-display-mobile font-mono text-primary/20 group-hover:text-primary transition-colors">01</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">event_available</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Agenda</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Contáctanos por WhatsApp o formulario web y cuéntanos los síntomas o el servicio periódico que requiere tu auto.
+            </p>
+</div>
+<div class="mt-space-md h-1 w-full bg-surface-container group-hover:bg-primary transition-colors rounded-full"></div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-mobile text-display-mobile font-mono text-primary/20 group-hover:text-primary transition-colors">02</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">car_repair</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Revisamos</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Recibimos el carro en bahía y efectuamos una inspección visual y física detallada de los subsistemas mecánicos.
+            </p>
+</div>
+<div class="mt-space-md h-1 w-full bg-surface-container group-hover:bg-primary transition-colors rounded-full"></div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-mobile text-display-mobile font-mono text-primary/20 group-hover:text-primary transition-colors">03</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">analytics</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Diagnosticamos</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Conectamos el escáner y bancos de prueba para aislar las causas reales de la anomalía, no solo los síntomas superficiales.
+            </p>
+</div>
+<div class="mt-space-md h-1 w-full bg-surface-container group-hover:bg-primary transition-colors rounded-full"></div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-mobile text-display-mobile font-mono text-primary/20 group-hover:text-primary transition-colors">04</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">chat_bubble_outline</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Te explicamos</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Te entregamos la cotización desglosada y el plan de trabajo claro. Solo procedemos cuando das tu visto bueno formal.
+            </p>
+</div>
+<div class="mt-space-md h-1 w-full bg-surface-container group-hover:bg-primary transition-colors rounded-full"></div>
+</div>
+</div>
+<!-- Telemetry Pipeline visual indicator -->
+<div class="mt-space-xl p-space-md rounded-xl bg-surface-container-high/50 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">task_alt</span>
+<span class="font-code-spec text-code-spec text-on-surface">Tiempo promedio de diagnóstico inicial: 45 minutos</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Trazabilidad en tiempo real vía WhatsApp</span>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 7. SECCIÓN VISUAL DE DIAGNÓSTICO (Gran formato)                   -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Visual Box -->
+<div class="lg:col-span-7 relative">
+<div class="relative rounded-xl overflow-hidden shadow-2xl">
+<img alt="Técnico automotriz utilizando tablet de diagnóstico y escáner digital" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD903bR_66AXECeFPEaXmhS_fXGcdj6wR3G2SIXvzvX7eRvgHR8uHY0J0YvHpuNrWZhdVeZcekK59HIh-4NAm9OjEtxHug0X0pTUkzTSxNxCAVszGYNiWIH2ul1Rcr30D4o9XjfNy78jeY8EyIzf6V1zI8BlrR-t3tUETrPBgOVKtAN7C9pEBtYd8WLeq66jDqitTqRNJERACfVh-RcvKbCPmc1ZYINUSRb4MKRkbrTMEU2luv1I0n4eQ">
+<!-- Floating Diagnostic Card Overlay -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-xs bg-inverse-surface/90 backdrop-blur-md p-space-md rounded-lg shadow-lg">
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim font-bold">LECTURA EN VIVO OBD-II</span>
+</div>
+<p class="font-code-spec text-code-spec text-white">Sensor MAP: 34.2 kPa | Corrección de combustible: +1.2% | Sin códigos de falla pendientes</p>
+</div>
+</div>
+</div>
+<!-- Right Content Box -->
+<div class="lg:col-span-5 flex flex-col items-start gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim font-bold">PRECISIÓN ELECTRÓNICA</span>
+<h2 class="font-headline-xl text-headline-xl text-white tracking-tight leading-tight">
+            La tranquilidad comienza con un buen diagnóstico.
+          </h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim leading-relaxed">
+            Antes de reparar, entendemos qué está pasando en tu motor y sistemas electrónicos. Conectar la máquina adecuada nos permite resolver anomalías sin cambiar piezas innecesarias ni hacerte perder tiempo.
+          </p>
+<ul class="space-y-space-xs my-space-xs">
+<li class="flex items-center gap-space-xs text-surface-container-high font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+              Detección de fallas intermitentes y testigos Check Engine
+            </li>
+<li class="flex items-center gap-space-xs text-surface-container-high font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+              Pruebas de actuadores y actuadores de aceleración electrónica
+            </li>
+<li class="flex items-center gap-space-xs text-surface-container-high font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+              Reset de intervalos de servicio e informe PDF digital para el cliente
+            </li>
+</ul>
+<a class="mt-space-xs inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-xl py-space-md rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-all shadow-lg shadow-primary-container/20" href="#contacto">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span class="">Solicitar diagnóstico</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 8. TESTIMONIOS DEMO (Prueba social transparente)                 -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="bg-surface-container px-space-xs py-space-2xs rounded font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">TESTIMONIOS DEMO</span>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider">· EXPERIENCIA DE CLIENTES</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+            Confianza respaldada por hechos.
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-code-spec text-code-spec">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="font-bold text-on-surface">4.9 de 5</span> en satisfacción de servicio
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Me explicaron claramente qué tenía el carro y cuáles eran las opciones antes de comenzar el trabajo. Muy buena atención y cero sorpresas en la factura final."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+              CM
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Carlos M.</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Mazda CX-5 · Bogotá</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Llevé mi vehículo por una falla que no habían podido identificar en otros dos talleres y aquí lograron encontrar el problema con el escáner en menos de una hora."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+              NR
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Natalia R.</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Volkswagen Golf · Bogotá</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Me gustó mucho que me explicaran el mantenimiento que realmente necesitaba el vehículo sin intentar venderme repuestos innecesarios. Da mucha tranquilidad."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+              AP
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Andrés P.</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Toyota Prado · Bogotá</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 9. GALERÍA EDITORIAL ASIMÉTRICA                                  -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">INSTALACIONES PRIME BOGOTÁ</span>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+          Infraestructura de precisión.
+        </h2>
+</div>
+<!-- Bento-style Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Large Hero Shot: Elevador y taller -->
+<div class="md:col-span-8 h-80 lg:h-96 rounded-xl overflow-hidden shadow-md group relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Wide perspective shot of Mecánica Prime modern workshop in Bogota, premium automotive hydraulic lift with SUV, clean polished dark floors, professional technician at work with precision lighting" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBl0O0TJuVkmpWnOHlOZ75ebxGsMXKN-11UhHhzsVJjS9jncIX8RbKa8ptV7W8osnCHmJxwQO1yhfNurbrDiXZp1fHdgZuZIsD_PZ7hl9SbHMZ2kGcChL1RieTVzcGYXeIweOWaXFicHgdVo0bwWxcg_ewYJw9OYuNjRXtq3cXxckfpjzY8OfFGZhrJDsR7-AGkKH_X-svABGo0Ypork5shwwtsIUSWNFfSIZbAlpxfVc4Y4t3K5FeLOQ&quot;);">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-space-lg">
+<div class="text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">BAHÍA 01</span>
+<h4 class="font-headline-md text-headline-md">Elevadores hidráulicos de precisión simétrica</h4>
+</div>
+</div>
+</div>
+<!-- Medium Shot: Close up Mantenimiento fluido & herramientas -->
+<div class="md:col-span-4 h-80 lg:h-96 rounded-xl overflow-hidden shadow-md group relative">
+<img alt="Detalle de cambio de aceite y herramientas de torque automotriz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQxL0Qt_ptG9vP4vtIdjDj19noMs3eDbqt6WRRfJRqRn_Y75zHdyo8F4bovhqgnm3QXOWXzS_E8CAhgK7C1GTlno_Oug5gJSdsD7AiW2wrQCkM4zcgFhbZySRfco9yaSgJPLKjJO6xj5WN5Nza6J4W8ZmW9vQWjgFsjUnInRev8d271HgKQP-cVfiKMYpP4FcN-OIgONAqH1_msGEGKb4BhKeESkg_w7humvhdrbJyrxf1vYRjRC3PIQ">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-space-lg">
+<div class="text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">CALIBRACIÓN</span>
+<h4 class="font-headline-sm text-headline-sm">Torque controlado según norma de fábrica</h4>
+</div>
+</div>
+</div>
+<!-- Second Row: Escáner computarizado -->
+<div class="md:col-span-5 h-72 rounded-xl overflow-hidden shadow-md group relative">
+<img alt="Escáner automotriz y diagnóstico computarizado en tiempo real" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD903bR_66AXECeFPEaXmhS_fXGcdj6wR3G2SIXvzvX7eRvgHR8uHY0J0YvHpuNrWZhdVeZcekK59HIh-4NAm9OjEtxHug0X0pTUkzTSxNxCAVszGYNiWIH2ul1Rcr30D4o9XjfNy78jeY8EyIzf6V1zI8BlrR-t3tUETrPBgOVKtAN7C9pEBtYd8WLeq66jDqitTqRNJERACfVh-RcvKbCPmc1ZYINUSRb4MKRkbrTMEU2luv1I0n4eQ">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-space-lg">
+<div class="text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">TELEMETRÍA</span>
+<h4 class="font-headline-sm text-headline-sm">Diagnóstico multimarca OBD-II en tiempo real</h4>
+</div>
+</div>
+</div>
+<!-- Second Row: Technical Brake System detail -->
+<div class="md:col-span-7 h-72 rounded-xl overflow-hidden shadow-md group relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Extreme close up of a ventilated brake rotor disc and red high performance brake caliper on modern automobile in workshop setting, sharp mechanical detail" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAFEkZ_FKaHsKt_e1dQZ0ppYx6a6F5wsDA4RuwOQYTLD0b2lg-BQREJKx-y5MSOKEOCt0NBUthYy4JOYHTZk7tKcnsHmlYMudJg-ZpyRJQe4djkVMo-HrtzLRIWTNKJQeo8KcpQqTH93cxfgnXnbPUNaYyWVWV-GW-gZYuWoN7HPzzFvHwHLxzPNawDn_tEl9F7OoUGpNBe3DWNvvwYTBMNvy_gk3UO0s2v15miFo928U7UuAPFbmZ5hg&quot;);">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-space-lg">
+<div class="text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">SEGURIDAD CRÍTICA</span>
+<h4 class="font-headline-md text-headline-md">Banco de inspección de discos y zapatas de frenado</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 10. CTA SECUNDARIO DE IMPACTO                                    -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl bg-surface-container">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop text-center">
+<div class="max-w-2xl mx-auto flex flex-col items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[36px]">query_builder</span>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+          ¿Hace cuánto no revisas tu vehículo?
+        </h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+          Una revisión preventiva a tiempo puede ayudarte a detectar fallas incipientes antes de que se conviertan en reparaciones mayores en Bogotá.
+        </p>
+<a class="inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-xl py-space-md rounded-lg font-headline-sm text-headline-sm uppercase tracking-wider transition-all shadow-lg shadow-primary-container/20" href="#contacto">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span class="">Agendar revisión hoy</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 11. SECCIÓN DE CONTACTO & UBICACIÓN                              -->
+<!-- ================================================================= -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface" id="contacto">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Left Column: Workshop Information -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">SEDE PRINCIPAL</span>
+<h2 class="font-headline-xl text-headline-xl tracking-tight text-on-surface">
+                Visítanos en Bogotá.
+              </h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Estamos ubicados estratégicamente sobre el corredor de la Calle 72 con Carrera 27, con fácil acceso desde Chapinero, Usaquén y Barrios Unidos.
+              </p>
+</div>
+<!-- Contact Specs List -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">pin_drop</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dirección Taller</span>
+<span class="font-body-md text-body-md text-secondary">Carrera 27 # 72-18, Barrios Unidos, Bogotá D.C., Colombia</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">call</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Líneas telefónicas</span>
+<span class="font-body-md text-body-md text-secondary">+57 601 782 3410 · Celular: +57 320 278 4199</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Horarios de atención</span>
+<div class="font-body-sm text-body-sm text-secondary space-y-0.5 mt-space-2xs">
+<div class="">Lunes a viernes: 7:30 a.m. – 6:00 p.m.</div>
+<div class="">Sábados: 8:00 a.m. – 2:00 p.m.</div>
+<div class="text-primary font-semibold">Domingos y festivos: Cerrado</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Location Map Placeholder using data-location -->
+<div class="mt-space-lg rounded-xl overflow-hidden shadow-sm h-48 w-full relative" data-location="Carrera 27 # 72-18, Bogota, Colombia" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAXagGWIjw6bu2nc4a1qIsM8VbTZYoiRsYf4hOaqg8t-p7xgNqHF81L89nMoNBKADiTrOdSCKHpZb7_BJ5E34TH7zPgpZTANbiIwZQRRzRnptR_BytDyF-q0NTzHxte6EuvZPMhz_yhiQjDlnAFEwDCa4p5CgMWxsaH3DThC5cyxtuUlsSTFyqtCVR9zwbBcXwSikg_W72maGSjrj9R9G37H5r4KE75MgLhGLhV4UCweft-LnaU9DTVSQ&quot;);">
+<div class="absolute inset-0 bg-inverse-surface/10 flex items-center justify-center pointer-events-none">
+<span class="bg-inverse-surface text-inverse-on-surface px-space-md py-space-xs rounded-full font-code-spec text-code-spec flex items-center gap-space-2xs shadow-md">
+<span class="material-symbols-outlined text-primary text-[16px]">navigation</span>
+                Mecánica Prime · Sede Calle 72
+              </span>
+</div>
+</div>
+</div>
+<!-- Right Column: Conversion Booking Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-space-xl lg:p-space-2xl rounded-xl shadow-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                FORMULARIO DE CITA RÁPIDA
+              </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                Agenda una revisión
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                Completa tus datos y te confirmaremos disponibilidad en menos de 20 minutos hábiles.
+              </p>
+</div>
+<form class="flex flex-col gap-space-md" id="booking-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<!-- Input: Nombre -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="client-name">Nombre completo *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="client-name" placeholder="Ej. Mateo Gómez" required="" type="text">
+</div>
+<!-- Input: Teléfono & WhatsApp -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="client-phone">Teléfono / WhatsApp *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="client-phone" placeholder="Ej. 320 278 4199" required="" type="tel">
+</div>
+<!-- Input: Datos de Vehículo (Marca, Modelo, Año) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="car-brand">Marca *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="car-brand" placeholder="Ej. Mazda" required="" type="text">
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="car-model">Línea / Modelo *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="car-model" placeholder="Ej. 3 Touring" required="" type="text">
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="car-year">Año *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="car-year" max="2026" min="1990" placeholder="2021" required="" type="number">
+</div>
+</div>
+<!-- Input: Motivo de consulta -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="service-reason">Motivo principal de consulta *</label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all" id="service-reason" required="">
+<option disabled="" selected="" value="">Selecciona un servicio</option>
+<option value="mantenimiento">Mantenimiento preventivo periódico</option>
+<option value="diagnostico">Diagnóstico computarizado / Testigo Check Engine</option>
+<option value="frenos">Sistema de frenos (pastillas / discos)</option>
+<option value="suspension">Suspensión, dirección o ruidos en tren delantero</option>
+<option value="motor">Sincronización o revisión de motor</option>
+<option value="otro">Otro tipo de falla mecánica</option>
+</select>
+</div>
+<!-- Input: Comentarios adicionales -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold" for="notes">Descripción o síntoma (Opcional)</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-inverse-surface transition-all resize-none" id="notes" placeholder="Describe brevemente lo que notas en el vehículo..." rows="3"></textarea>
+</div>
+<!-- Terms & Privacy -->
+<div class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-0" id="terms" required="" type="checkbox">
+<label for="terms" class="">Autorizo el tratamiento de mis datos de contacto para la cita técnica.</label>
+</div>
+<!-- Submit CTA -->
+<button class="w-full h-12 inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary rounded-lg font-headline-sm text-code-spec uppercase tracking-wider transition-all shadow-md shadow-primary-container/20" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span class="">Solicitar cita de revisión</span>
+</button>
+<!-- Inline Success Simulation -->
+<div class="hidden p-space-md bg-emerald-50 text-emerald-900 rounded-lg flex items-center gap-space-sm font-body-md text-body-md" id="form-feedback">
+<span class="material-symbols-outlined text-emerald-600">verified</span>
+<span class="">¡Solicitud registrada con éxito! Uno de nuestros ingenieros te contactará por WhatsApp para confirmar la bahía.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-3xl pb-space-2xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Mecánica Prime Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xs3BiEQ_TT81OyQtG_q7sdZakbarVC_kkfvPP2ilnQggt65MYOmwxTPlgwh1_JGXlSTBN04x1DW-KN2btjDwuSqx1mNpFgk8kFJisLgdxzNLtUJTsbXuVYGKhSjm3wfcluttYvpJtDv17s2qlFPE655ctN_o-rG-E6dqmRwoowIanm9GmUNKYfv7Wsbdsb-X24um6FmGu6Ch7YlX0p9QDED46hM4HTfe_SS1hz4QogpOP4C-8qvK9GXp8"><span class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface tracking-tight">MECÁNICA PRIME</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Taller de ingeniería mecánica y diagnóstico automotriz computarizado de alto rendimiento en Bogotá. Precisión, telemetría y transparencia técnica.</p><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-primary-fixed-dim tracking-wider uppercase"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>Bahías activas Calle 72</div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-inverse-on-surface uppercase tracking-wider">Navegación</span><a class="font-body-sm text-body-sm text-secondary-fixed-dim hover:text-inverse-on-surface transition-colors" href="#inicio">Inicio</a><a class="font-body-sm text-body-sm text-secondary-fixed-dim hover:text-inverse-on-surface transition-colors" href="#servicios">Diagnóstico &amp; Servicios</a><a class="font-body-sm text-body-sm text-secondary-fixed-dim hover:text-inverse-on-surface transition-colors" href="#proceso">Protocolo de Taller</a><a class="font-body-sm text-body-sm text-secondary-fixed-dim hover:text-inverse-on-surface transition-colors" href="#nosotros">Ingenieros Certificados</a><a class="font-body-sm text-body-sm text-secondary-fixed-dim hover:text-inverse-on-surface transition-colors" href="#contacto">Localización &amp; Citas</a></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-inverse-on-surface uppercase tracking-wider">Contacto Bogotá</span><div class="flex items-start gap-space-xs text-secondary-fixed-dim font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim shrink-0 mt-0.5">location_on</span><span class="">Carrera 27 # 72-18, Barrios Unidos / Chapinero Norte, Bogotá D.C.</span></div><div class="flex items-center gap-space-xs text-secondary-fixed-dim font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim shrink-0">call</span><span class="">+57 601 782 3410</span></div><div class="flex items-center gap-space-xs text-secondary-fixed-dim font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim shrink-0">smartphone</span><span class="">+57 320 278 4199</span></div><div class="flex items-center gap-space-xs text-secondary-fixed-dim font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-primary-fixed-dim shrink-0">schedule</span><span class="">Lun - Sáb: 7:00 AM - 6:00 PM</span></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm text-inverse-on-surface uppercase tracking-wider">Aviso Técnico</span><div class="bg-surface-dim/10 p-space-md rounded-lg flex flex-col gap-space-xs"><span class="font-code-spec text-code-spec text-primary-fixed-dim font-semibold uppercase tracking-wider">DEMO CONCEPT — Datos ficticios</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-relaxed">Entorno conceptual de demostración para taller especializado. Los nombres, teléfonos y disponibilidad representan simulación de interfaz.</p></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><span class="font-label-md text-label-md text-secondary-fixed-dim uppercase tracking-wider">© 2024 MECÁNICA PRIME INGENIERÍA S.A.S. BOGOTÁ. TODOS LOS DERECHOS RESERVADOS.</span><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-secondary-fixed-dim hover:text-inverse-on-surface uppercase tracking-wider transition-colors" href="#">Términos</a><a class="font-label-md text-label-md text-secondary-fixed-dim hover:text-inverse-on-surface uppercase tracking-wider transition-colors" href="#">Privacidad</a><a class="font-label-md text-label-md text-secondary-fixed-dim hover:text-inverse-on-surface uppercase tracking-wider transition-colors" href="#">Garantía Mecánica</a></div></div></div></footer><div class="fixed bottom-6 right-6 z-50"><a class="flex items-center gap-space-xs bg-inverse-surface text-inverse-on-surface hover:text-on-primary hover:bg-primary-container px-space-md py-space-xs rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.3)] transition-all hover:scale-105 group" href="https://wa.me/573202784199?text=Hola%20Mec%C3%A1nica%20Prime,%20deseo%20agendar%20una%20revisi%C3%B3n" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] text-primary-fixed-dim group-hover:text-on-primary transition-colors">chat</span><span class="font-headline-sm text-code-spec uppercase tracking-wider">WhatsApp Prime</span></a></div>
+
+
+
+
+
+</body></html>
