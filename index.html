@@ -66,7 +66,16 @@
 <!-- ================================================================= -->
 <section class="relative w-full -mt-20 pt-32 pb-24 lg:pt-40 lg:pb-36 overflow-hidden bg-inverse-surface text-inverse-on-surface" id="inicio">
 <!-- Cinematic Background Image with Gradient Scrim -->
-<video class="absolute inset-0 z-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-taller.webp" aria-hidden="true"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+<video id="hero-video" class="absolute inset-0 z-0 w-full h-full object-cover" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-taller.webp" aria-hidden="true"><source src="assets/video/hero-leon.mp4" type="video/mp4"></video>
+<script>
+(function () {
+  var v = document.getElementById('hero-video');
+  function keepPlaying() { v.play().catch(function () {}); }
+  v.addEventListener('ended', function () { v.currentTime = 0; keepPlaying(); });
+  v.addEventListener('pause', function () { if (!document.hidden) keepPlaying(); });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) keepPlaying(); });
+})();
+</script>
 <div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-inverse-surface/40"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-inverse-surface/60"></div>
 <!-- Architectural Grid Lines Overlay (Decorative) -->
