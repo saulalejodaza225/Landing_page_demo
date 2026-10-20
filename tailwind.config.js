@@ -1,5 +1,5 @@
 /**
- * Config de Tailwind de Mecánica Prime.
+ * Config de Tailwind de Tu Negocio.
  * assets/styles.css fue generado a partir de esta config (extraída del script
  * inline que traía el archivo original) usando el motor JIT de Tailwind.
  * Si se agregan clases nuevas al HTML, hay que regenerar assets/styles.css.
